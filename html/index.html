@@ -1,0 +1,191 @@
+<!-- !DOCTYPE is not essentially an HTML element/tag, it is a first-line description that tells the browser to identify the document as HTML -->
+<!DOCTYPE html>
+<html>
+
+<!-- the head tag comprises configuration and description of the webpage -->
+
+<head>
+	<!-- the charset is a specification for the type of encoding the webpage uses -->
+	<meta charset="utf-8">
+
+	<!-- the viewport meta tag tells the browser to consider the screen size of different devices -->
+	<meta name="viewport" content="width=device-width initial-scale=1">
+
+	<!-- the title tag is a label for the webpage -->
+	<title>This is an HTML5 example by Michael Peter</title>
+</head>
+
+<!-- the body tag is the tag which comprises the obvious elements/content of the webpage -->
+
+<body>
+
+	<!-- the h tags represent headers as in publication, we can use headers ranging from h1 to h6 -->
+	<h1>This is h1, the biggest header</h1>
+	<h2>h2 is smaller</h2>
+	<h3>h3 is even smaller</h3>
+	<h4>This is h4</h4>
+	<h5>This is h5</h5>
+	<h6>... and h6</h6>
+
+	<!-- a p tag is simply a paragraph -->
+	<p>This is a paragraph. We can use "lorem ipsum" as placeholders for texts when developing a webpage. Lorem ipsum
+		dolor sit amet consectetur, adipisicing elit. Praesentium magnam veritatis nobis
+		impedit necessitatibus
+		incidunt, maxime unde atque dolore illo eligendi et autem iure molestias? Inventore in molestiae maxime ipsum.</p>
+
+	<!-- one can use <br> for line breaks and <hr> for horizontal rule -->
+	<p>There is a line break after this paragraph</p>
+	<br>
+
+	<p>There is a horizontal rule after this paragraph</p>
+	<hr>
+
+	<!-- text can be formatted with the following tags -->
+	<p>There are formatted texts after this paragraph. The formatting tags are styled as inline elements at default. So, I
+		am going to add a line break, br tag, after each of them to render the next on a new line.</p>
+
+	<b>This is a bold text</b><br>
+
+	<strong>This is also a bold text</strong><br>
+
+	<u>This text is underlined</u><br>
+
+	<em>This is an emphasized text with the "em" tag, rendered in italics</em><br>
+
+	<i>This is italics as well, with "i" tag</i><br>
+
+	<p>There is an image after this paragraph. We can add images to HTML documents by using the "img" tag. One of its
+		attributes is "src" which means source and tells the browser where to get the image from. The source could be a
+		remote url on the internet or a local file which we can locate on our computer. We are got the source of this image
+		from https://via.placeholder.com/200x200. The other important attribute for the image tag is "alt" which means
+		alternative text. It is displayed when the image isn't ready yet or if it could not be found.</p>
+
+	<img src="https://via.placeholder.com/200x200" alt="alternative text">
+
+	<!-- We can display lists and tables in html as well -->
+
+	<p>This is a paragraph with an ordered list, with the tag "ol" after it. All lists, whether ordered or unordered, have
+		list items which are represented by the "li" tag</p>
+
+	<ol>
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item with sub-items (as a sub-list)
+			<ol>
+				<li>First sub item</li>
+				<li>Second sub item</li>
+			</ol>
+		</li>
+		<li>Fourth item</li>
+	</ol>
+
+	<p>This is another paragraph with an unordered list after it</p>
+	<ul>
+		<li>First item</li>
+		<li>Second item with sub-items (as a sub-list)
+			<ul>
+				<li>First sub item</li>
+				<li>Second sub item</li>
+				<li>Third sub item</li>
+			</ul>
+		</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+		<li>Fifth item</li>
+	</ul>
+
+
+
+	<p>This is a paragraph with a table after it. HTML tables have two basic sections, the header (first row with
+		titles/labels) and other rows. The table is declared/initiated with a "table" tag. Inside the table tag, we have
+		table rows, with "tr" tags. Each row has data in it, with the "td" tag. However, the first row, if we want it so,
+		could be the labels/column-headers and we use the "th" to signify this. "th" means table header. So we use "th" for
+		the first row and "td" for others (if we want a table header). In more critical implementation, though, we would
+		have the first row or all rows that mark the table head under the "thead" tag and all other rows under the "tbody"
+	</p>
+
+
+	<table border="5" cellpadding="10" cellspacing="0">
+		<thead>
+			<tr>
+				<th>Column 1</th>
+				<th>Column 2</th>
+				<th>Column 3</th>
+				<th>Column 4</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Data</td>
+				<td>Data</td>
+				<td>Data</td>
+				<td>Data</td>
+			</tr>
+			<tr>
+				<td>Data</td>
+				<td>Data</td>
+				<td>Data</td>
+				<td>Data</td>
+			</tr>
+			<tr>
+				<td>Data</td>
+				<td>Data</td>
+				<td>Data</td>
+				<td>Data</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p>This is a paragraph after the table. We styled the table a little by adding attributes to the "table" tag, like
+		border, cellpadding and cellspacing. There is a horizontal rule, "hr", after this paragraph</p>
+	<hr>
+
+
+	<!-- HTML forms -->
+	<p>There is an HTML form after this paragraph. HTML forms are enclosed in the "form" tag which comprises different
+		input types - text input, password, email, radio button, checkbox, submit button, reset button. Below are examples
+		of these input types.</p>
+
+	<form>
+		Name: <br>
+		<input type="text" value="My name">
+		<br>
+		Email: <br>
+		<input type="email" value="My Email">
+		<br>
+		Password: <br>
+		<input type="password" value="My Password">
+		<br>
+		<br>
+		<input type="radio" name="gender" type="radio">
+		Male
+		<br>
+		<input type="radio" name="gender" type="radio">
+		Female
+		<br>
+		<input type="checkbox">
+		Checkbox 1
+		<br>
+		<input type="checkbox">
+		Checkbox 2
+		<br>
+		<input type="submit" value="Submit">
+		<br>
+		<input type="reset" value="Reset">
+	</form>
+
+	<p>We use line breaks ubiquitously because all elememts in a form tag are displayed inline. "br" allows me to render
+		them in new lines</p>
+
+
+	<p>The form inputs can have default values and these are represented by the attribute "value". The "submit" input type
+		is a button which submits the form [programmatically] while the "reset" input type resets the inputs to the initial
+		values we put or empties them if we didn't put initial values. The "value" attribute is also used for the submit and
+		reset buttons so as to label them (since they are buttons and not text fields). There are other attributes and one
+		of them is "placeholder" which only labels a field but is not an actual text that one can delete (it is replaced as
+		soon as the user types into the field). It is used to
+		hint the user what information is expected in that field.</p>
+</body>
+
+</html>
