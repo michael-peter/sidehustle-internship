@@ -144,7 +144,8 @@
 
 	<!-- HTML forms -->
 	<p>There is an HTML form after this paragraph. HTML forms are enclosed in the "form" tag which comprises different
-		input types - text input, password, email, radio button, checkbox, submit button, reset button. Below are examples
+		input types - text input, password, email, number, radio button, checkbox, submit button, reset button. Below are
+		examples
 		of these input types.</p>
 
 	<form>
@@ -173,6 +174,29 @@
 		<input type="submit" value="Submit">
 		<br>
 		<input type="reset" value="Reset">
+		<br>
+		Input field: <br>
+		<input type="number" id="input" oninput="output.value = input.value">
+		<br>
+		Output: <br>
+		<input type="number" id="output">
+
+		<br>
+		Range input: <br>
+		<input id="rangein" type="range" min="0" max="20" value="5" oninput="rangeout.value = rangein.value">
+		<br>
+		Range output: <br>
+		<input type="number" id="rangeout" value="5">
+		<br>
+		<br>
+		Search field: <br>
+		<input type="search" placeholder="Search here">
+		<br>
+		Time field: <br>
+		<input type="time">
+		<br>
+		Week field: <br>
+		<input type="week">
 	</form>
 
 	<p>We use line breaks ubiquitously because all elememts in a form tag are displayed inline. "br" allows me to render
@@ -186,6 +210,16 @@
 		of them is "placeholder" which only labels a field but is not an actual text that one can delete (it is replaced as
 		soon as the user types into the field). It is used to
 		hint the user what information is expected in that field.</p>
+
+	<p>In this form, we can programmatically link values between input fields. The number typed in field "input number"
+		appears in "output field" as soon as I type. This is achieved by assigning identities to the input fields, using the
+		"id" attribute. The "id" is referenced and that makes the manipulation work.</p>
+
+	<p>The range input type accepts attributes that specify minimum and maximum numbers of the range</p>
+
+	<p>The search input type is used as the semantic tag for search fields.</p>
+
+	<p>The time and week input types allows to select time and week respsectively. URL type collects urls</p>
 </body>
 
 </html>
