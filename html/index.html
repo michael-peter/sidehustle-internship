@@ -199,11 +199,11 @@
 		<input type="week">
 	</form>
 
-	<p>We use line breaks ubiquitously because all elememts in a form tag are displayed inline. "br" allows me to render
-		them in new lines</p>
+	<p>We use line breaks ubiquitously because all elements in a form tag are displayed inline. "br" allows me to render
+		them on different lines</p>
 
 
-	<p>The form inputs can have default values and these are represented by the attribute "value". The "submit" input type
+	<p>The form inputs can have default values and these are represented by the "value" attribute. The "submit" input type
 		is a button which submits the form [programmatically] while the "reset" input type resets the inputs to the initial
 		values we put or empties them if we didn't put initial values. The "value" attribute is also used for the submit and
 		reset buttons so as to label them (since they are buttons and not text fields). There are other attributes and one
@@ -211,7 +211,8 @@
 		soon as the user types into the field). It is used to
 		hint the user what information is expected in that field.</p>
 
-	<p>In this form, we can programmatically link values between input fields. The number typed in field "input number"
+	<p>In this form, we can programmatically link values between input fields with the "oninput" attribute which is like
+		an event (in JavaScript). The number typed in field "input number"
 		appears in "output field" as soon as I type. This is achieved by assigning identities to the input fields, using the
 		"id" attribute. The "id" is referenced and that makes the manipulation work.</p>
 
