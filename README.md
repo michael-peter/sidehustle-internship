@@ -7,7 +7,7 @@
 
 #### Happy coding!!!
 
-[]-----------HTML
-    []-------/html/index.html
-    []-------/quizzes/*.docx
-    []-------/tasks/tribute.html
+[]-----------HTML<br>
+    []-------/html/index.html<br>
+    []-------/quizzes/*.docx<br>
+    []-------/tasks/tribute.html<br>
